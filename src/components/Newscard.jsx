@@ -11,7 +11,7 @@ export default class Newscard extends Component {
       
         <Card className='card-cont d-flex flexrow bg-dark position-relative'>
           <span class="badge badge-warning position-absolute" style={{backgroundColor:"red",font:"0.2rem",left:"0.1rem"}}>{source}</span>
-        <Card.Img variant="left" className='p-1 rounded'src={!img?"http://congtygiaphat104.com/template/Default/img/no.png":img}/>
+        <Card.Img variant="left" className='p-1 rounded'src={!img?"https://congtygiaphat104.com/template/Default/img/no-new.png":img}/>
         <Card.Body className='position-relative'>
           <Card.Title className='text-light'><a href={url} target="_blank" rel="noreferrer" style={{textDecoration:"none",color:"white"}}>{title}</a></Card.Title>
           <Card.Text className='text-light'>
