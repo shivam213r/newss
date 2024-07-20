@@ -26,7 +26,7 @@ export default class Newsection extends Component {
     setprogress(40)
     // api={eapi?`https://newsapi.org/v2/everything?apiKey=6412d604448d4448b0616cb6f094e885&${endpoint}&from=2024-07-13`:`https://newsapi.org/v2/top-headlines?country=in&apiKey=6412d604448d4448b0616cb6f094e885${!endpoint ? "" : endpoint}&pageSize=8`}
     const api = eapi
-            ? `https://newsapi.org/v2/everything?apiKey=6412d604448d4448b0616cb6f094e885&${endpoint}&from=2024-07-12&pageSize=8&language=en`
+            ? `https://newsapi.org/v2/everything?apiKey=6412d604448d4448b0616cb6f094e885&${endpoint}&from=2024-07-14&pageSize=8&language=en`
             : `https://newsapi.org/v2/top-headlines?country=in&apiKey=6412d604448d4448b0616cb6f094e885${!endpoint ? "" : endpoint}&pageSize=8`;
 
     
@@ -43,7 +43,7 @@ export default class Newsection extends Component {
     this.setState({ page: this.state.page + 1 })
     let { endpoint,eapi } = this.props
     const api = eapi
-            ? `https://newsapi.org/v2/everything?apiKey=6412d604448d4448b0616cb6f094e885&${endpoint}&from=2024-07-14&page=${this.state.page}&pageSize=8&language=en`
+            ? `https://newsapi.org/v2/everything?apiKey=6412d604448d4448b0616cb6f094e885&${endpoint}&from=2024-07-15&page=${this.state.page}&pageSize=8&language=en`
             : `https://newsapi.org/v2/top-headlines?country=in&apiKey=6412d604448d4448b0616cb6f094e885${!endpoint ? "" : endpoint}&page=${this.state.page}&pageSize=8`;
 
     let data = await fetch(api)
